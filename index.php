@@ -16,12 +16,12 @@ if ($text == ""){
     $response .= "1. Account Number \n";
     $response .= "2. Account Balance";
 } else if ($text == "2"){
-    //bussiness logic for next level
-    $response = "END your phone number is ". $phoneNumber;
+    //business logic for next level
+    $response = "END your phone number is ".$phoneNumber;
 
 }else if ($text == "1*1"){
     //this is a second level response where the user selected 1 in he first instance
-    $accountNumber = "ACC1001"
+    $accountNumber = "ACC1001";
 
     //this is terminal request. Note how we start with End
     $response = "END your account Number is ".$accountNumber;
@@ -30,16 +30,8 @@ if ($text == ""){
     // this is a second level response where the user selected 1 in the first instance
     $balance = "GHS 500";
     $response "END your account balance is ".$balance
-
-
-
 }
 header('content -type; text/plain');
 echo $response;
-
-
-
-
-
 
 ?>
