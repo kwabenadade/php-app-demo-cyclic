@@ -29,7 +29,7 @@ if ($text == ""){
 }else if ($text = "1*2"){
     // this is a second level response where the user selected 1 in the first instance
     $balance = "GHS 500";
-    $response = "END your account balance is ".$balance
+    $response = "END your account balance is ".$balance;
 }
 header('content -type; text/plain');
 echo $response;
